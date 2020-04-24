@@ -9,6 +9,10 @@ Please document your code as you would in a production system. Please also inclu
 ### How to run
 Download this repo. If you are going to clone it, do so privately so that nobody else can see your answer.
 
+Software versions npm 3.5.2 and node v8.10.0 are known to work, 
+https://www.npmjs.com/package/n can be used to manage node versions if 
+you do not have a preferred tool.
+
 ```shell
 npm install
 npm run transpile # Run each time to recompile your Javascript.
