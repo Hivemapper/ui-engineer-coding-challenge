@@ -2,7 +2,7 @@
 
 This coding challenge is designed to test your 3D graphics ability. If you have not worked with OpenGL and/or Three.js before, this challenge will be painful. We have set up a basic application structure as a starting point, but feel free to implement this however you see fit.
 
-This challenge shouldn't take more than 4 hours to finish. Task 2 is signifigantly easier than task 1.
+This challenge shouldn't take more than 4 hours to finish. Task 2 is significantly easier than task 1.
 
 Please document your code as you would in a production system. Please also include a short `README` explaining how you approached the problem, and things you might improve on given more time.
 
@@ -44,6 +44,6 @@ Note:
 - We've included Three.js in the starting code. Feel free to not use Three.js if there's something else you are more comfortable with.
 
 ## Task 2: Color the point cloud based on altitude
-`App.jsx` comes with two buttons at the top to switch between color modes. For 'Color By Altitude' please color each point based on it's relative height above sea level. In the model provided the minimum altitude is 6.65 meters and the maximum is 58.57 meters.
+`App.jsx` comes with two buttons at the top to switch between color modes. For 'Color By Altitude' please color each point based on its relative height above sea level. In the model provided the minimum altitude is 6.65 meters and the maximum is 58.57 meters.
 
 `geo-utils.js` is your friend here.
