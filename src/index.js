@@ -1,6 +1,5 @@
 /* index.js */
 
-import 'regenerator-runtime/runtime';
 import './styles.css';
 import React from 'react';
 import ReactDOM from 'react-dom';

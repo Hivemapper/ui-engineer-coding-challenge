@@ -28,17 +28,17 @@ export default function App() {
 
   return (
     <span>
-    <div id="three-holder">
-      <div className="loading">Loading...</div>
-    </div>
-    <div className="button-container">
-      <button>
-        Color With RGB
-      </button>
-      <button>
-        Color By Altitude
-      </button>
-    </div>
-  </span>
+      <div id="three-holder">
+        <div className="loading">Loading...</div>
+      </div>
+      <div className="button-container">
+        <button>
+          Color With RGB
+        </button>
+        <button>
+          Color By Altitude
+        </button>
+      </div>
+    </span>
   );
 }
