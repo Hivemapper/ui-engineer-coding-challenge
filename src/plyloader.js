@@ -1,3 +1,6 @@
+/* plyloader.js */
+/* eslint-disable */
+
 /**
  * @author Wei Meng / http://about.me/menway
  *

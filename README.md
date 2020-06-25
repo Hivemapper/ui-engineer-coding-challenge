@@ -9,16 +9,15 @@ Please document your code as you would in a production system. Please also inclu
 ### How to run
 Download this repo. If you are going to clone it, do so privately so that nobody else can see your answer.
 
-Software versions npm 3.5.2 and node v8.10.0 are known to work, 
-https://www.npmjs.com/package/n can be used to manage node versions if 
-you do not have a preferred tool.
+Please make sure that you have current versions of **`node`** (^14.0.0) and either **`npm`** (^6.0.0) or **`yarn`** (^1.22.0).
 
-```shell
-npm install
-npm run transpile # Run each time to recompile your Javascript.
-```
+To install the dependencies, run **`npm ci`** or just **`yarn`**.
 
-Open up `index.html` in your browser.
+To start the dev server, run **`npm run start-dev-server`** or **`yarn start-dev-server`**.
+
+To load the app, use your browser and head to **`localhost:8080`**.
+
+Webpack will automatically reload the app whenever you make changes.
 
 ### About the point cloud
 The point cloud provided is a downsampled version of the point clouds that Hivemapper uses to build our map. It is:

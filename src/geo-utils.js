@@ -1,3 +1,6 @@
+/* geo-utils.js */
+/* eslint-disable */
+
 const RADIUS = 6378137;
 const FLATTENING = 1/298.257223563;
 const POLAR_RADIUS = RADIUS*(1-FLATTENING);
