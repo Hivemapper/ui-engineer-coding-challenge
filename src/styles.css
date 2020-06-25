@@ -1,0 +1,23 @@
+/* styles.css */
+
+button {
+  height: 25px;
+  width: 45%;
+  vertical-align: top;
+  margin: 0 2.5%;
+}
+.button-container {
+  height: 40px;
+}
+.loading {
+  margin: 10px;
+}
+#three-holder {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  color: white;
+}

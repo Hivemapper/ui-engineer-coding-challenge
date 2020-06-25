@@ -1,51 +1,44 @@
-import React from 'react';
+/* App.js */
+/* eslint-disable no-console, no-unused-vars */
+
+import React, { useEffect } from 'react';
 import * as THREE from 'three';
 // See https://github.com/mrdoob/three.js/issues/10311 for why the wildcard import is needed.
 
-import PLYLoader from './plyloader.js';
-import {ECEFToLonLatAlt} from './geo-utils.js';
+import PLYLoader from './plyloader';
+import { ECEFToLonLatAlt } from './geo-utils';
 
-const buttonStyle = {
-  height: '25px',
-  width: '45%',
-  verticalAlign: 'top',
-  margin: '0 2.5%',
-};
+function loadModel() {
+  const loader = new PLYLoader();
+  loader.load(
+    'https://s3.amazonaws.com/web-ui-engineering-challenge/point-cloud.ply',
+    (geometry) => {
+      // geometry here is an instance of THREE.Geometry
+      console.log('loaded geometry', geometry);
+      const threeHolderElem = document.getElementById('three-holder');
+      threeHolderElem.innerHTML = null;
+    },
+  );
+}
 
-export default class App extends React.Component {
-  componentDidMount() {
-    this.loadModel();
-  }
+export default function App() {
+  useEffect(() => {
+    loadModel();
+  });
 
-  render() {
-    return (
-      <span>
-        <div id="three-holder" style={
-          {
-            position: 'absolute',
-            top: '40px',
-            right: '0',
-            bottom: '0',
-            left: '0',
-            background: 'black',
-          }
-        }></div>
-        <div style={ {height: '40px'} }>
-          <button style={buttonStyle}>Color With RGB</button>
-          <button style={buttonStyle}>Color By Altitude</button>
-        </div>
-      </span>
-    );
-  }
-
-  loadModel() {
-    const loader = new PLYLoader();
-    loader.load(
-      'https://s3.amazonaws.com/web-ui-engineering-challenge/point-cloud.ply',
-      (geometry) => {
-        // geometry here is an instance of THREE.Geometry
-        console.log('loaded geometry', geometry);
-      }
-    );
-  }
+  return (
+    <span>
+    <div id="three-holder">
+      <div className="loading">Loading...</div>
+    </div>
+    <div className="button-container">
+      <button>
+        Color With RGB
+      </button>
+      <button>
+        Color By Altitude
+      </button>
+    </div>
+  </span>
+  );
 }
