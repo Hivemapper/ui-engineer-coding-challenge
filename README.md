@@ -11,11 +11,11 @@ Download this repo. If you are going to clone it, do so privately so that nobody
 
 Please make sure that you have current versions of **`node`** (^14.0.0) and either **`npm`** (^6.0.0) or **`yarn`** (^1.22.0).
 
-To install the dependencies, run `npm ci` or just `yarn`.
+To install the dependencies, run **`npm ci`** or just **`yarn`**.
 
-To start the dev server, run `npm run start-dev-server` or `yarn start-dev-server`.
+To start the dev server, run **`npm run start-dev-server`** or **`yarn start-dev-server`**.
 
-To load the app, use your browser and head to `localhost:8080`.
+To load the app, use your browser and head to **`localhost:8080`**.
 
 Webpack will automatically reload the app whenever you make changes.
 
